@@ -1,0 +1,9 @@
+3
+None
+There are three constraints created , using var X(a node exist in K1 complete graph) and Y(a node exist in K2 complete graph).
+if a node a exist in k1 subgraph then a-> (k1-1 set of its neighbour nodes are alsoin the K1 subgraph ).
+Candidate nodes are found to make it quick in case of sparse graphs .
+Second constraint is cardinality exactly K1 set of nodes having degree greate than K1 can be part of k1 subgraph .
+Third constraint is trivial , to mark nodes not having degree >=k1-1 as FALSE .
+Tried using Trie , to reduce the redundant cnf constraints .
+To find max of complete subgraph binary search is used , as we know if we have found a max at let T , no need to search below it .
